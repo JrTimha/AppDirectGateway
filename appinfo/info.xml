@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+    <id>appdirect</id>
+    <name>App Direct</name>
+    <summary>AppDirect is managing all features of Magenta Cloud Business.</summary>
+    <description><![CDATA[Features: Generating groups, control group quotas, managing magenta cloud abonnements ect.]]></description>
+    <version>1.1.4</version>
+    <licence>agpl</licence>
+    <author mail="FMB.FMB-Hospitality-IPTV-Team@t-systems.com" homepage="https://www.t-systems.com/de/de">T-Systems International</author>
+    <namespace>AppDirect</namespace>
+    <category>organization</category>
+    <category>social</category>
+    <category>tools</category>
+    <bugs>https://www.t-systems.com/de/de</bugs>
+    <dependencies>
+        <nextcloud min-version="23" max-version="23"/>
+        <database>mysql</database>
+    </dependencies>
+    <commands>
+        <command>OCA\AppDirect\Command\JobQueue</command>
+        <command>OCA\AppDirect\Command\BillingRulesCheck</command>
+    </commands>
+</info>

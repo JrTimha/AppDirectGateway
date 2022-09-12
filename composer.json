@@ -1,0 +1,13 @@
+{
+    "name": "nextcloud-apps/appdirect",
+    "description": "AppDirect is managing all features of Magenta Cloud Business.",
+    "type": "project",
+    "license": "AGPL",
+    "authors": [
+        {
+            "name": "T-Systems International GmbH"
+        }
+    ],
+    "require": {},
+    "require-dev": {}
+}
