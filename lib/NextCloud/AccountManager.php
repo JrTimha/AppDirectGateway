@@ -202,13 +202,13 @@ class AccountManager {
 		return $this->group->getGID();
   }
 
-    public function startTest(){
-        $this->group = $this->groupManager->createGroup("AlexPartyMembers");
-        $this->user = $this->userManager->createUser("Twitch-Girl", "pwVeryVerySafe420");
+  /**  public function startTest(){
+        $this->group = $this->groupManager->createGroup("TestGroup");
+        $this->user = $this->userManager->createUser("TestUser", "verySafeTestPassword123");
         $this->group->addUser($this->user);
         $arrUserIds = $this->group->getUsers($this->group);
         echo count($arrUserIds);
-    }
+    }*/
 
 	/**
 	* The method is called when a customer is canceling the contract. His Account will be deleted.
@@ -459,7 +459,7 @@ class AccountManager {
 	public function deleteAllUsersContains($containsString){
 
 		if($containsString === ""){
-			return "idiot!!!";
+			return "containsString is a empty string";
 		}
 
 		//get all existing users as an array of IUsers
